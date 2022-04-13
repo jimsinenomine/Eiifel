@@ -1,0 +1,2273 @@
+<?xml version="1.0"?>
+<ewg_config name="saplib">
+
+  <rule_list>
+  	  <!-- Ignore everything that starts with an underscore. -->
+    <rule>
+      <match>
+          <identifier name="_.*"/>  
+      </match>
+       <wrapper type="none">
+      </wrapper>
+    </rule>
+
+
+    	  <!-- Include functions, structs, unions, macros, etc-->
+    	  <!-- To learn more read: https://github.com/eiffel-wrap-c/WrapC/blob/master/doc/Readme.md#config_file-->
+
+     
+      
+      <rule>
+        <match>
+          <identifier name="RFC_SERVER_SESSION_CHANGE_LISTENER"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RFC_SERVER_ERROR_LISTENER"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RFC_SERVER_STATE_CHANGE_LISTENER"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RFC_SERVER_FUNCTION"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RFC_ON_CHECK_TRANSACTION"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RFC_ON_COMMIT_TRANSACTION"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RFC_ON_ROLLBACK_TRANSACTION"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RFC_ON_CONFIRM_TRANSACTION"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RFC_FUNC_DESC_CALLBACK"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RFC_ON_CHECK_UNIT"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RFC_ON_COMMIT_UNIT"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RFC_ON_ROLLBACK_UNIT"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RFC_ON_CONFIRM_UNIT"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RFC_ON_GET_UNIT_STATE"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RFC_ON_AUTHORIZATION_CHECK"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcInit"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetVersion"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetVersionInternal"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcSetIniPath"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcReloadIniFile"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcSetTraceLevel"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcSetTraceEncoding"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcSetTraceDir"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcSetTraceType"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcSetCpicTraceLevel"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcSetCpicKeepalive"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcSetSocketTraceLevel"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcLoadCryptoLibrary"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcSetWebsocketPingInterval"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcSetWebsocketPongTimeout"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcSetMaximumTraceFileSize"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcSetMaximumStoredTraceFiles"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcUTF8ToSAPUC"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcSAPUCToUTF8"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetRcAsString"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetTypeAsString"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetDirectionAsString"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetServerStateAsString"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetSessionEventAsString"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcLanguageIsoToSap"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcLanguageSapToIso"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetSaplogonEntries"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="printfU"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcFreeSaplogonEntries"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetSaplogonEntries"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcFreeSaplogonEntries"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetSaplogonEntry"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcFreeSaplogonEntry"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcOpenConnection"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcRegisterServer"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcStartServer"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcCloseConnection"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcIsConnectionHandleValid"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcCancel"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcResetServerContext"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcPing"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetConnectionAttributes"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetServerContext"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetSapRouter"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetPartnerExternalIP"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetPartnerSSOTicket"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetPartnerSNCName"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetPartnerSNCKey"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcSNCNameToKey"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcSNCKeyToName"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcListenAndDispatch"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcInvoke"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcCreateServer"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcDestroyServer"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcLaunchServer"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcShutdownServer"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetServerAttributes"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetServerConnectionMonitorData"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcDestroyServerConnectionMonitorData"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcAddServerErrorListener"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcAddServerStateChangedListener"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcAddServerSessionChangedListener"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcSetServerStateful"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcInstallAuthenticationCheckHandler"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetAuthenticationType"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetAuthenticationUser"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetAuthenticationPassword"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetAuthenticationAssertionTicket"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetAuthenticationCertificateData"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetTransactionID"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcCreateTransaction"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcInvokeInTransaction"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcSubmitTransaction"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcConfirmTransaction"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcConfirmTransactionID"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcDestroyTransaction"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetUnitID"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcInvokeInUnit"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcSubmitUnit"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcConfirmUnit"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcDestroyUnit"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetUnitState"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcInstallServerFunction"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcInstallGenericServerFunction"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcInstallPasswordChangeHandler"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcInstallAuthorizationCheckHandler"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcCreateFunction"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcDestroyFunction"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcSetParameterActive"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcIsParameterActive"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcCreateStructure"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcCloneStructure"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcDestroyStructure"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcCreateTable"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcCloneTable"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcDestroyTable"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetCurrentRow"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcAppendNewRow"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcReserveCapacity"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcAppendNewRows"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcInsertNewRow"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcAppendRow"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcInsertRow"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcDeleteCurrentRow"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcDeleteAllRows"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcMoveToFirstRow"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcMoveToLastRow"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcMoveToNextRow"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcMoveToPreviousRow"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcMoveTo"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetRowCount"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetRowType"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcCreateAbapObject"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcDestroyAbapObject"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetChars"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetCharsByIndex"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetNum"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetNumByIndex"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetDate"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetDateByIndex"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetTime"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetTimeByIndex"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetString"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetStringByIndex"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetBytes"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetBytesByIndex"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetXString"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetXStringByIndex"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetInt"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetIntByIndex"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetInt1"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetInt1ByIndex"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetInt2"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetInt2ByIndex"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetInt8"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetInt8ByIndex"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetFloat"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetFloatByIndex"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetDecF16"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetDecF16ByIndex"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetDecF34"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetDecF34ByIndex"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetStructure"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetStructureByIndex"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetStructureIntoCharBuffer"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetTable"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetTableByIndex"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetAbapObject"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetAbapObjectByIndex"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetStringLength"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetStringLengthByIndex"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcSetChars"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcSetCharsByIndex"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcSetNum"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcSetNumByIndex"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcSetString"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcSetStringByIndex"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcSetDate"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcSetDateByIndex"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcSetTime"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcSetTimeByIndex"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcSetBytes"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcSetBytesByIndex"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcSetXString"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcSetXStringByIndex"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcSetInt"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcSetIntByIndex"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcSetInt1"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcSetInt1ByIndex"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcSetInt2"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcSetInt2ByIndex"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcSetInt8"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcSetInt8ByIndex"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcSetFloat"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcSetFloatByIndex"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcSetDecF16"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcSetDecF16ByIndex"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcSetDecF34"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcSetDecF34ByIndex"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcSetStructure"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcSetStructureByIndex"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcSetStructureFromCharBuffer"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcSetTable"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcSetTableByIndex"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcSetAbapObject"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcSetAbapObjectByIndex"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetAbapClassException"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcSetAbapClassException"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcDescribeFunction"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcDescribeType"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetFunctionDesc"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetCachedFunctionDesc"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcAddFunctionDesc"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcRemoveFunctionDesc"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetTypeDesc"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetCachedTypeDesc"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcAddTypeDesc"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcRemoveTypeDesc"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetClassDesc"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetCachedClassDesc"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcDescribeAbapObject"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcAddClassDesc"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcRemoveClassDesc"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcClearRepository"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcSaveRepository"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcLoadRepository"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcCreateTypeDesc"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcAddTypeField"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcSetTypeLength"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetTypeName"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetFieldCount"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetFieldDescByIndex"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetFieldDescByName"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetTypeLength"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcDestroyTypeDesc"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcCreateFunctionDesc"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetFunctionName"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcAddParameter"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetParameterCount"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetParameterDescByIndex"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetParameterDescByName"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcAddException"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetExceptionCount"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetExceptionDescByIndex"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetExceptionDescByName"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcEnableBASXML"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcIsBASXMLSupported"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcDestroyFunctionDesc"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcEnableAbapClassException"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcIsAbapClassExceptionEnabled"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcCreateClassDesc"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetClassName"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcAddClassAttribute"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetClassAttributesCount"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetClassAttributeDescByIndex"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetClassAttributeDescByName"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetParentClassByIndex"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetParentClassesCount"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcAddParentClass"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetImplementedInterfaceByIndex"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetImplementedInterfacesCount"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcAddImplementedInterface"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcDestroyClassDesc"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcCreateMetadataQueryResult"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcDestroyMetadataQueryResult"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcCreateThroughput"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcDestroyThroughput"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcSetThroughputOnConnection"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetThroughputFromConnection"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcRemoveThroughputFromConnection"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcSetThroughputOnServer"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetThroughputFromServer"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcRemoveThroughputFromServer"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcResetThroughput"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetNumberOfCalls"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetTotalTime"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetSerializationTime"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetDeserializationTime"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetApplicationTime"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetServerTime"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetNetworkWritingTime"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetNetworkReadingTime"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetSentBytes"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcGetReceivedBytes"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+      <rule>
+        <match>
+          <identifier name="RfcSetMessageServerResponseTimeout"/>
+        </match>
+        <wrapper type="default">
+        </wrapper>
+      </rule> 
+      
+    
+    
+      <!-- And the rest should be ignored -->
+    <rule>
+      <match>
+      </match>
+       <wrapper type="none">
+      </wrapper>
+    </rule>
+
+
+  </rule_list>
+
+</ewg_config>
